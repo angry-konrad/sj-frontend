@@ -1,0 +1,78 @@
+.header {
+    background: url('/images/apartament_photo.jpg') no-repeat center;
+    background-size: cover;
+
+    &__row {
+        height: 100%;
+    }
+
+    &__logo {
+        margin-bottom: 3rem;
+    }
+
+    &__logo-image {
+        height: 100px;
+    }
+
+    &__info {
+        height: 100%;
+        background-color: rgba(255, 255, 255, .7);
+        padding: 3rem 4rem;
+    }
+
+    &__info-heading {
+        padding-bottom: 1.5rem;
+    }
+
+    &__info-description {
+        padding-bottom: 2rem;
+    }
+
+    &__info-more {
+        margin-top: 2rem;
+    }
+
+    &__info-contact-link {
+        margin: 1rem 0;
+        padding: .5rem 1rem;
+
+        &.--facebook::before {
+            content: "\f09a";
+            font-family: FontAwesome;
+        }
+        &.--twitter::before {
+            content: "\f099";
+            font-family: FontAwesome;
+        }
+        &.--mail::before {
+            content: "\f0e0";
+            font-family: FontAwesome;
+        }
+    }
+
+    &__background {
+        position: relative;
+    }
+
+    &__background-gallery-link {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-size: 1.2rem;
+
+        &::before{
+            content: '\f083';
+            font-family: FontAwesome;
+            font-size: 1.4rem;
+            padding-right: .7rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header{
+        &__info {
+            padding: 1rem;
+        }
+    }
+}

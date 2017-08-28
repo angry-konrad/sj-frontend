@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="no">
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -11,10 +11,14 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.theme.default.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     
@@ -27,47 +31,34 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills float-right">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-        <h3 class="text-muted">marketer fe template</h3>
-      </div>
-
-      <div class="jumbotron">
-        <h1 class="display-3">'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-          <h4>Sass</h4>
-          <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
-
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-          <h4>Modernizr</h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
+    <div class="wrapper">
+      <header class="header container-fluid">
+        <div class="header__row row">
+          <div class="header__info col-sm-6">
+            <div class="header__logo">
+              <img class="header__logo-image" src="/images/header_logo.png" alt="company logo"/>
+            </div>
+            <h2 class="header__info-heading">Nedre Bobakkane</h2>
+            <h5 class="header__info-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </h5>
+            <h6 class="header__info-address">Nedre Bobakkane,<br /> 6812 Forde</h6>
+            <div>
+              <a class="header__info-more main-link-style" href="#">Click for more information</a>
+            </div>
+            <div>
+                <a class="header__info-contact-link --facebook main-link-style" href="#"></a>
+                <a class="header__info-contact-link --twitter main-link-style" href="#"></a>
+                <a class="header__info-contact-link --mail main-link-style" href="#"></a>
+            </div>
+          </div>
+          <div class="header__background col-sm-6">
+            <div>
+              <a class="header__background-gallery-link main-link-style" href="#">Show gallery</a>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div class="footer">
-        <p>♥ from the Yeoman team</p>
-      </div>
+      </header>
     </div>
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -85,6 +76,7 @@
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/popper.js/dist/umd/popper.js"></script>
     <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/owl.carousel/dist/owl.carousel.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     
