@@ -1,0 +1,19 @@
+.carousel-details {
+    padding: 3.5rem 0;
+
+    &__item {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    &__icon {
+        display: inline-block!important;
+        width: 50px!important;
+        height: 50px;
+        margin-bottom: 1.5rem;
+    }
+
+    &__heading {
+        color: $main-color;
+    }
+}
