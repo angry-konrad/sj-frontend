@@ -16,4 +16,21 @@
     &__heading {
         color: $main-color;
     }
+
+    .owl-theme .owl-nav [class*='owl-'] {
+        background: none;
+        color: $main-color;
+        position: absolute;
+        font-size: 4rem;
+    }
+
+    .owl-prev {
+        left: 1%;
+        top: 15%;
+    }
+
+    .owl-next {
+        right: 1%;
+        top: 15%;
+    }
 }
