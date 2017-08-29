@@ -38,11 +38,15 @@
 
     &__info-contact-link {
         margin: 1rem 0;
-        padding: .5rem 1rem;
+        padding: 11px;
+        width: 45px;
+        height: 45px;
+        text-align: center;
+        font-weight: normal;
 
         &.--facebook::before {
             content: "\f09a";
-            font-family: FontAwesome;
+            font-family: FontAwesome;        
         }
         &.--twitter::before {
             content: "\f099";
@@ -63,6 +67,7 @@
         bottom: 0;
         right: 0;
         font-size: 1.2rem;
+        font-weight: normal;
 
         &::before{
             content: '\f083';

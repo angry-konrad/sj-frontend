@@ -19,9 +19,9 @@
 
     .owl-theme .owl-nav [class*='owl-'] {
         background: none;
-        color: $main-color;
+        color: rgba($main-color, .6);
         position: absolute;
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     .owl-prev {
@@ -38,6 +38,18 @@
 @media screen and (max-width: 576px){
     .carousel-details {
         padding: 2.5rem 0;
+
+        .owl-theme .owl-nav [class*='owl-'] {
+            font-size: 2.5rem;
+        }
+
+        .owl-prev {
+            left: .2%;
+        }
+    
+        .owl-next {
+            right: .2%;
+        }
     
         &__item {
             text-align: center;

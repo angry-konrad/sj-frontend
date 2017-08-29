@@ -25,7 +25,11 @@
 
     &__contact-link {
         margin: 1rem 0;
-        padding: .5rem 1rem;
+        padding: 11px;
+        width: 45px;
+        height: 45px;
+        text-align: center;
+        font-weight: normal;
         background-color: $secondary-color;
         color: $main-color;
 
