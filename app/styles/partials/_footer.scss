@@ -1,0 +1,49 @@
+.footer {
+    margin-top: 4rem;
+    padding: 5rem 4rem 6rem;
+    background-color: $main-color;
+    color: $secondary-color;
+
+    &__first-row {
+        border-bottom: 1px solid #fff;
+    }
+
+    &__second-row {
+        padding-top: 2rem;
+    }
+
+    &__link {
+        background-color: $footer-link;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        padding: .5rem 4rem;
+    }
+
+    &__logo-image {
+        width: 200px;
+    }
+
+    &__contact-link {
+        margin: 1rem 0;
+        padding: .5rem 1rem;
+        background-color: $secondary-color;
+        color: $main-color;
+
+        &.--facebook::before {
+            content: "\f09a";
+            font-family: FontAwesome;
+        }
+        &.--twitter::before {
+            content: "\f099";
+            font-family: FontAwesome;
+        }
+        &.--mail::before {
+            content: "\f0e0";
+            font-family: FontAwesome;
+        }
+
+        &:hover {
+            color: $main-color;
+        }
+    }
+}

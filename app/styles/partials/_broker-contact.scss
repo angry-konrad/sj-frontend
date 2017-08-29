@@ -20,4 +20,14 @@
         font-weight: bold;
         padding-bottom: .6rem;
     }
+
+    &__contact-link {
+        padding: .8rem 1.5rem;
+    }
+
+    &__information {
+        display: table;
+        height: 100%;
+        width: 100%;
+    }
 }
