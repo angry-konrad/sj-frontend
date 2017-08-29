@@ -34,7 +34,7 @@
     
     <div class="wrapper">
       <header class="header container-fluid">
-        <div class="header__row row">
+        <div class="header__row --desktop row">
           <div class="header__info col-sm-6">
             <div class="header__logo">
               <img class="header__logo-image" src="/images/header_logo.png" alt="company logo"/>
@@ -59,10 +59,20 @@
             </div>
           </div>
         </div>
+        <div class="header__row --mobile row">
+          <div class="carousel-photos__owl owl-carousel owl-theme">
+            <div class="carousel-photos__item">
+              <img class="carousel-photos__photo owl-lazy" data-src="/images/apartament_photo.jpg"/>
+            </div>
+            <div class="carousel-photos__item">
+              <img class="carousel-photos__photo owl-lazy" data-src="/images/house_photo2.jpg"/>
+            </div>    
+          </div>
+        </div>
       </header>
 
       <section class="carousel-details">
-        <div class="owl-carousel owl-theme">
+        <div class="carousel-details__owl owl-carousel owl-theme">
           <div class="carousel-details__item">
               <img class="carousel-details__icon owl-lazy" data-src="/images/piggybank.png"/>
               <h3 class="carousel-details__heading">6 999 000,-</h3>
@@ -124,10 +134,10 @@
 
       <section class="broker-contact container-fluid">
         <div class="row">
-          <div class="col align-right">
+          <div class="col-6 align-right">
             <img class="broker-contact__photo" src="/images/broker_photo.jpg" alt=""/>
           </div>
-          <div class="col">
+          <div class="col-6">
             <div class="broker-contact__information">
               <div class="align-bottom">
                 <h3 class="broker-contact__name">Randi Vigdal</h3>
@@ -143,16 +153,16 @@
 
       <footer class="footer container-fluid">
         <div class="footer__first-row row">
-          <div class="col-sm-6">
+          <div class="col-sm-6 mobile-centered">
             <h5>Lorem ipsum dolor sit amet?</h5>
             <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
-          <div class="col-sm-6 align-right">
+          <div class="col-sm-6 align-right mobile-centered">
             <a class="footer__link main-link-style" href="#">Meld pa</a>
           </div>
         </div>
-        <div class="footer__second-row row">
-          <div class="col-sm-6">
+        <div class="footer__second-row row ">
+          <div class="col-sm-6 mobile-centered">
             <h6>Folg oss is sosiale media</h6>
             <div>
               <a class="footer__contact-link --facebook main-link-style" href="#"></a>
@@ -160,7 +170,7 @@
               <a class="footer__contact-link --mail main-link-style" href="#"></a>
             </div>
           </div>
-          <div class="col-sm-6 align-right">
+          <div class="col-sm-6 align-right mobile-centered">
             <div class="footer__logo">
               <img class="footer__logo-image" src="/images/footer_logo.png" alt="company logo white"/>
             </div>

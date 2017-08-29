@@ -4,6 +4,10 @@
 
     &__row {
         height: 100%;
+
+        &.--mobile {
+            display: none;
+        }
     }
 
     &__logo {
@@ -73,6 +77,45 @@
     .header{
         &__info {
             padding: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header{
+        background: none;
+
+        &__row {
+            &.--desktop {
+                display: none;
+            }
+    
+            &.--mobile {
+                display: block;
+
+                .owl-theme .owl-nav [class*='owl-'] {
+                    background: none;
+                    color: $secondary-color;
+                    position: absolute;
+                    font-size: 4rem;
+                }
+            
+                .owl-prev {
+                    left: 1%;
+                    top: 30%;
+                }
+            
+                .owl-next {
+                    right: 1%;
+                    top: 30%;
+                }
+            }
+        }
+    }
+
+    .carousel-photos {
+        &__photo {
+            height: 300px;
         }
     }
 }
