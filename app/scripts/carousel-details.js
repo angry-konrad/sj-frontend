@@ -9,7 +9,8 @@ $(document).ready(function() {
         navText: ["<i class='fa fa-angle-left' aria-hidden='true'></i>","<i class='fa fa-angle-right' aria-hidden='true'></i>"],
         responsive : {
             0 : {
-                items: 2
+                items: 2,
+                margin: -30
             },
             768 : {
                 items: 4

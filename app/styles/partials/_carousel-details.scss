@@ -21,16 +21,44 @@
         background: none;
         color: $main-color;
         position: absolute;
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .owl-prev {
         left: 1%;
-        top: 15%;
+        top: 44px;
     }
 
     .owl-next {
         right: 1%;
-        top: 15%;
+        top: 44px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .carousel-details {
+        padding: 2.5rem 0;
+    
+        &__item {
+            text-align: center;
+            padding: 1rem;
+        }
+    
+        &__heading {
+            color: $main-color;
+            font-size: 1.2rem;
+        }
+
+        &__subheading {
+            font-size: .9rem;
+        }
+
+        .owl-prev {
+            top: 34px;
+        }
+    
+        .owl-next {
+            top: 34px;
+        }
     }
 }

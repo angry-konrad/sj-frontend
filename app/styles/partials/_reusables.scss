@@ -24,6 +24,20 @@
     vertical-align: bottom;
 }
 
+.no-left-padding {
+    padding-left: 0;
+}
+
+.vertical-align {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.relative {
+    position: relative;
+}
+
 @media screen and (max-width: 576px) {
     .mobile-centered {
         text-align: center;

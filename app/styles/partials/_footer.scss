@@ -47,3 +47,24 @@
         }
     }
 }
+
+@media screen and (max-width: 576px) {
+    .footer {
+        &__first-row {
+            border-bottom: none;
+
+            .border-bottom {
+                border-bottom: 1px solid #fff;
+                margin-bottom: 2rem;
+            }
+        }
+
+        &__logo-image {
+            padding-top: 2rem;
+        }
+
+        &__link {
+            padding: .5rem 3.5rem;
+        }
+    }
+}

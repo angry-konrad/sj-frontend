@@ -95,21 +95,46 @@
 
                 .owl-theme .owl-nav [class*='owl-'] {
                     background: none;
-                    color: $secondary-color;
+                    color: rgba($secondary-color, .8);
                     position: absolute;
-                    font-size: 4rem;
+                    font-size: 3rem;
                 }
             
                 .owl-prev {
                     left: 1%;
-                    top: 30%;
+                    top: 115px;
                 }
             
                 .owl-next {
                     right: 1%;
-                    top: 30%;
+                    top: 115px;
                 }
             }
+        }
+
+        &__background-gallery-link {
+            z-index: 3;
+            font-size: .9rem;
+
+            &::before{
+                font-size: 1rem;
+            }
+        }
+
+        &__info-heading {
+            color: $main-color;
+            padding-top: 1.5rem;
+            padding-bottom: 1rem;
+            font-size: 1.7rem;
+        }
+    
+        &__info-description {
+            font-size: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        &__info-address {
+            font-size: .9rem;
         }
     }
 

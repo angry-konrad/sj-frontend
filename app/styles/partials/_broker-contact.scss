@@ -4,7 +4,7 @@
     padding-bottom: 4rem;
 
     &__photo {
-        max-width: 250px;
+        max-height: 250px;
     }
 
     &__name {
@@ -26,8 +26,46 @@
     }
 
     &__information {
-        display: table;
         height: 100%;
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .broker-contact {
+        &__photo {
+            max-height: 150px;
+        }
+
+        &__name {
+            margin-bottom: 2rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        &__mail, &__phone {
+            font-size: .7rem;
+        }
+    
+        &__phone {
+            margin-bottom: 1.5rem;
+        }
+    
+        &__subtitle {
+            font-weight: bold;
+            font-size: .7rem;
+            padding-bottom: .3rem;
+        }
+    
+        &__contact-link {
+            padding: .8rem;
+            font-size: .8rem;
+        }
+    
+        &__information {
+            display: table;
+            height: 100%;
+            width: 100%;
+        }
     }
 }
