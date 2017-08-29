@@ -115,16 +115,34 @@
           <a class="details-description__link-more main-link-style" href="javascript:void(0)">Show more</a>              
         </div>
       </section>
+
+      <section class="map-section">
+        <div class="map-section__map" id="map">
+        </div>
+      </section>
+
+      <section class="broker-contact container-fluid">
+        <div class="row">
+          <div class="col align-right">
+            <img class="broker-contact__photo" src="/images/broker_photo.jpg" alt=""/>
+          </div>
+          <div class="col">
+            <h3 class="broker-contact__name">Randi Vigdal</h3>
+            <h6 class="broker-contact__mail">randi@eigedomsmekling.no</h6>
+            <h6 class="broker-contact__phone">481 67 114</h6>
+            <h5 class="broker-contact__subtitle">Skal du selje?</h5>
+            <a class="broker-contact__contact-link main-link-style" href="#">Kontakt megler</a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+
+      </footer>
     </div>
     
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAd0VSSTcZijSLwvcus770tyz_CwWg7cIM&callback=initMap">
     </script>
 
     <!-- build:js scripts/vendor.js -->
@@ -151,6 +169,7 @@
     <!-- endbuild -->
     
     <!-- build:js scripts/main.js -->
+    <script src="scripts/map.js"></script>
     <script src="scripts/show-text-block.js"></script>
     <script src="scripts/carousel-details.js"></script>
     <script src="scripts/main.js"></script>
