@@ -1,23 +1,28 @@
 (function() {
     "use strict";
     window.addEventListener("load", function() {
-      var form = document.getElementById("needs-validation");
-      form.addEventListener("submit", function(event) {
-        if (form.checkValidity() == false) {
-          event.preventDefault();
-          event.stopPropagation();
-          form.classList.add("was-validated");
-        }
-        else {
-            event.preventDefault();
-            $.ajax({
-                url: location.href,
-                context: form
-            });
+        var form = document.getElementById("needs-validation");
+
+        $('#modalForm').on('hidden.bs.modal', function () {
             form.classList.remove("was-validated");
-            $('.modal-form__contact-form').hide();
-            $('.modal-form__submit-success').show();
-        }       
-      }, false);
+        });
+        
+        form.addEventListener("submit", function(event) {
+            if (form.checkValidity() == false) {
+                event.preventDefault();
+                event.stopPropagation();
+                form.classList.add("was-validated");
+            }
+            else {
+                event.preventDefault();
+                $.ajax({
+                    url: location.href,
+                    context: form
+                });
+                form.classList.remove("was-validated");
+                $('.modal-form__contact-form').hide();
+                $('.modal-form__submit-success').show();
+            }       
+        }, false);
     }, false);
 }());

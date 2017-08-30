@@ -1,7 +1,7 @@
 .modal-form {
     .modal-dialog {
         max-width: none;
-        padding: 0 2rem;
+        padding: 0 1rem;
     }
 
     .modal-body {
@@ -117,22 +117,30 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 991px) {
     .modal-form {
+        &__preview {
+            display: none;
+        }
+
         &__contact-form {
-            padding: 0 2rem;
+            padding: 2rem;
         }
     }
 }
 
 @media screen and (max-width: 767px) {
     .modal-form {
-        &__preview {
-            display: none;
-        }
-
         .modal-dialog {
             padding: 0 .5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .modal-form {
+        &__contact-form {
+            padding: 2rem 1rem;
         }
     }
 }

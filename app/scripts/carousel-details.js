@@ -13,8 +13,11 @@ $(document).ready(function() {
                 margin: -30
             },
             768 : {
+                items: 3
+            },
+            991 : {
                 items: 4
-            }
+            },
         },
     });
 
