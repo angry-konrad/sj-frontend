@@ -33,15 +33,15 @@
         background-color: $secondary-color;
         color: $main-color;
 
-        &.--facebook::before {
+        &.-facebook::before {
             content: "\f09a";
             font-family: FontAwesome;
         }
-        &.--twitter::before {
+        &.-twitter::before {
             content: "\f099";
             font-family: FontAwesome;
         }
-        &.--mail::before {
+        &.-mail::before {
             content: "\f0e0";
             font-family: FontAwesome;
         }
