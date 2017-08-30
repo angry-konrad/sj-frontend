@@ -3,7 +3,7 @@
     font-weight: bold;
     color: $secondary-color;
     background-color: $main-color;
-    padding: .5rem 1.5rem;
+    padding: .5rem 1rem;
 
     &:hover {
         text-decoration: none;
@@ -20,9 +20,10 @@
     text-align: right;
 }
 
-.align-bottom {
+.align-top {
     display: table-cell;
-    vertical-align: bottom;
+    vertical-align: top;
+    float: none;
 }
 
 .no-left-padding {
@@ -31,8 +32,6 @@
 
 .vertical-align {
     display: table;
-    height: 100%;
-    width: 100%;
 }
 
 .relative {

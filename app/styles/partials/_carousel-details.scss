@@ -15,6 +15,7 @@
 
     &__heading {
         color: $main-color;
+        font-weight: bold;
     }
 
     .owl-theme .owl-nav [class*='owl-'] {
@@ -38,8 +39,10 @@
 @media screen and (max-width: 576px){
     .carousel-details {
         padding: 2.5rem 0;
+        background-color: $main-color;
 
         .owl-theme .owl-nav [class*='owl-'] {
+            color: rgba(255, 255, 255, .6);
             font-size: 2.5rem;
         }
 
@@ -57,11 +60,12 @@
         }
     
         &__heading {
-            color: $main-color;
+            color: #fff;
             font-size: 1.2rem;
         }
 
         &__subheading {
+            color: #fff;
             font-size: .9rem;
         }
 

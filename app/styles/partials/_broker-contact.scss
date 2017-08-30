@@ -25,9 +25,10 @@
         padding: .8rem 1.5rem;
     }
 
-    &__information {
-        height: 100%;
-        width: 100%;
+    &_photo, &__information {
+        position: absolute;
+        bottom: 0;
+        left: 0;
     }
 }
 

@@ -56,7 +56,9 @@
 @media screen and (max-width: 576px) {
     .details-description {
         &__title {
-            padding: 3rem;
+            background-color: #fff;
+            color: $font-color;
+            padding: 3rem 2rem;
         }
     
         &__heading {
@@ -65,6 +67,10 @@
 
         &__text-block {
             padding: 2rem 1rem;
+        }
+
+        &__arrow-wrap {
+            display: none;
         }
     }
 }
