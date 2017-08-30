@@ -32,6 +32,7 @@
         margin-top: .25rem;
         font-size: .875rem;
         color: #dc3545;
+        position: absolute;
     }
 
     .was-validated .form-control:invalid~.invalid-feedback {
