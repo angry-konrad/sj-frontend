@@ -2,6 +2,23 @@
     background: url('/images/apartament_photo.jpg') no-repeat center;
     background-size: cover;
 
+    .owl-theme .owl-nav [class*='owl-'] {
+        background: none;
+        color: rgba($secondary-color, .8);
+        position: absolute;
+        font-size: 3rem;
+    }
+
+    .owl-prev {
+        left: 1%;
+        top: 115px;
+    }
+
+    .owl-next {
+        right: 1%;
+        top: 115px;
+    }
+
     &__row {
         height: 100%;
 
@@ -97,23 +114,6 @@
     
             &.-mobile {
                 display: block;
-
-                .owl-theme .owl-nav [class*='owl-'] {
-                    background: none;
-                    color: rgba($secondary-color, .8);
-                    position: absolute;
-                    font-size: 3rem;
-                }
-            
-                .owl-prev {
-                    left: 1%;
-                    top: 115px;
-                }
-            
-                .owl-next {
-                    right: 1%;
-                    top: 115px;
-                }
             }
         }
 

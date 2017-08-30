@@ -5,7 +5,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>marketer fe template</title>
+    <title>marketer-fe-template</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
@@ -21,10 +21,6 @@
     <!-- build:css styles/main.css -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-    
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
   <body>
@@ -55,7 +51,7 @@
           </div>
           <div class="header__background col-sm-6">
             <div>
-              <a class="header__background-gallery-link main-link-style" href="#">Sjå alle billete</a>
+              <a class="header__background-gallery-link main-link-style" href="" data-toggle="modal" data-target="#galleryModal">Sjå alle billete</a>
             </div>
           </div>
         </div>
@@ -63,14 +59,14 @@
         <div class="header__row -mobile row">
           <div class="relative">
             <div class="carousel-photos__owl owl-carousel owl-theme">
-              <div class="carousel-photos__item">
+              <div class="carousel-photos__item" data-toggle="modal" data-target="#galleryModal">
                 <img class="carousel-photos__photo owl-lazy" data-src="/images/apartament_photo.jpg"/>
               </div>
-              <div class="carousel-photos__item">
+              <div class="carousel-photos__item" data-toggle="modal" data-target="#galleryModal">
                 <img class="carousel-photos__photo owl-lazy" data-src="/images/house_photo2.jpg"/>
               </div>    
             </div>
-            <a class="header__background-gallery-link --mobile main-link-style" href="#">Sjå alle billete</a>
+            <a class="header__background-gallery-link --mobile main-link-style" href="#one" data-toggle="modal" data-target="#galleryModal">Sjå alle billete</a>
           </div>
           <div class="header__info center-div">
             <h2 class="header__info-heading">Nedre Bobakkane</h2>
@@ -175,6 +171,23 @@
           </div>
         </div>
 
+        <div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="galleryModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                  <div class="carousel-photos__owl owl-carousel owl-theme">
+                      <div class="carousel-photos__item">
+                        <img class="carousel-photos__photo owl-lazy" data-src="/images/apartament_photo.jpg" data-hash="zero"/>
+                      </div>
+                      <div class="carousel-photos__item">
+                        <img class="carousel-photos__photo owl-lazy" data-src="/images/house_photo2.jpg" data-hash="one"/>
+                      </div>    
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
       </header>
 
       <section class="carousel-details">
@@ -190,14 +203,19 @@
               <h5 class="carousel-details__subheading">Floor area</h5>
           </div>
           <div class="carousel-details__item">
+              <img class="carousel-details__icon owl-lazy" data-src="/images/costs.png"/>
+              <h3 class="carousel-details__heading">35,-</h3>
+              <h5 class="carousel-details__subheading">Overheads</h5>
+          </div>
+          <div class="carousel-details__item">
               <img class="carousel-details__icon owl-lazy" data-src="/images/bedroom.png"/>
               <h3 class="carousel-details__heading">3</h3>
               <h5 class="carousel-details__subheading">Bedrooms</h5>
           </div>
           <div class="carousel-details__item">
               <img class="carousel-details__icon owl-lazy" data-src="/images/costs.png"/>
-              <h3 class="carousel-details__heading">35,-</h3>
-              <h5 class="carousel-details__subheading">Overheads</h5>
+              <h3 class="carousel-details__heading">7th</h3>
+              <h5 class="carousel-details__subheading">Floor</h5>
           </div>       
         </div>
       </section>

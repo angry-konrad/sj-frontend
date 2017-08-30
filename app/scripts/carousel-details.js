@@ -21,6 +21,8 @@ $(document).ready(function() {
     $('.carousel-photos__owl').owlCarousel({
         items: 1,
         lazyLoad: true,
+        URLhashListener: true,
+        startPosition: 'URLHash',
         loop: true,
         dots: false,
         margin: 0,
