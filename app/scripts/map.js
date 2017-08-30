@@ -10,166 +10,166 @@ function initMap() {
       disableDefaultUI: true,
       styles: [
         {
-          "elementType": "geometry",
-          "stylers": [
+          'elementType': 'geometry',
+          'stylers': [
             {
-              "color": "#ffffff"
+              'color': '#ffffff'
             }
           ]
         },
         {
-          "elementType": "labels.icon",
-          "stylers": [
+          'elementType': 'labels.icon',
+          'stylers': [
             {
-              "visibility": "off"
+              'visibility': 'off'
             }
           ]
         },
         {
-          "elementType": "labels.text.fill",
-          "stylers": [
+          'elementType': 'labels.text.fill',
+          'stylers': [
             {
-              "color": "#909090"
+              'color': '#909090'
             },
             {
-              "weight": 2
+              'weight': 2
             }
           ]
         },
         {
-          "elementType": "labels.text.stroke",
-          "stylers": [
+          'elementType': 'labels.text.stroke',
+          'stylers': [
             {
-              "color": "#f5f5f5"
+              'color': '#f5f5f5'
             }
           ]
         },
         {
-          "featureType": "administrative.land_parcel",
-          "elementType": "labels.text.fill",
-          "stylers": [
+          'featureType': 'administrative.land_parcel',
+          'elementType': 'labels.text.fill',
+          'stylers': [
             {
-              "color": "#909090"
+              'color': '#909090'
             }
           ]
         },
         {
-          "featureType": "poi",
-          "elementType": "geometry",
-          "stylers": [
+          'featureType': 'poi',
+          'elementType': 'geometry',
+          'stylers': [
             {
-              "color": "#eeeeee"
+              'color': '#eeeeee'
             }
           ]
         },
         {
-          "featureType": "poi",
-          "elementType": "labels.text.fill",
-          "stylers": [
+          'featureType': 'poi',
+          'elementType': 'labels.text.fill',
+          'stylers': [
             {
-              "color": "#757575"
+              'color': '#757575'
             }
           ]
         },
         {
-          "featureType": "poi.park",
-          "elementType": "geometry",
-          "stylers": [
+          'featureType': 'poi.park',
+          'elementType': 'geometry',
+          'stylers': [
             {
-              "color": "#e5e5e5"
+              'color': '#e5e5e5'
             }
           ]
         },
         {
-          "featureType": "poi.park",
-          "elementType": "labels.text.fill",
-          "stylers": [
+          'featureType': 'poi.park',
+          'elementType': 'labels.text.fill',
+          'stylers': [
             {
-              "color": "#909090"
+              'color': '#909090'
             }
           ]
         },
         {
-          "featureType": "road",
-          "elementType": "geometry",
-          "stylers": [
+          'featureType': 'road',
+          'elementType': 'geometry',
+          'stylers': [
             {
-              "color": "#cdcdcd"
+              'color': '#cdcdcd'
             },
             {
-              "visibility": "simplified"
+              'visibility': 'simplified'
             }
           ]
         },
         {
-          "featureType": "road.arterial",
-          "elementType": "labels.text.fill",
-          "stylers": [
+          'featureType': 'road.arterial',
+          'elementType': 'labels.text.fill',
+          'stylers': [
             {
-              "color": "#909090"
+              'color': '#909090'
             }
           ]
         },
         {
-          "featureType": "road.highway",
-          "elementType": "geometry",
-          "stylers": [
+          'featureType': 'road.highway',
+          'elementType': 'geometry',
+          'stylers': [
             {
-              "color": "#cdcdcd"
+              'color': '#cdcdcd'
             }
           ]
         },
         {
-          "featureType": "road.highway",
-          "elementType": "labels.text.fill",
-          "stylers": [
+          'featureType': 'road.highway',
+          'elementType': 'labels.text.fill',
+          'stylers': [
             {
-              "color": "#909090"
+              'color': '#909090'
             }
           ]
         },
         {
-          "featureType": "road.local",
-          "elementType": "labels.text.fill",
-          "stylers": [
+          'featureType': 'road.local',
+          'elementType': 'labels.text.fill',
+          'stylers': [
             {
-              "color": "#909090"
+              'color': '#909090'
             }
           ]
         },
         {
-          "featureType": "transit.line",
-          "elementType": "geometry",
-          "stylers": [
+          'featureType': 'transit.line',
+          'elementType': 'geometry',
+          'stylers': [
             {
-              "color": "#e5e5e5"
+              'color': '#e5e5e5'
             }
           ]
         },
         {
-          "featureType": "transit.station",
-          "elementType": "geometry",
-          "stylers": [
+          'featureType': 'transit.station',
+          'elementType': 'geometry',
+          'stylers': [
             {
-              "color": "#eeeeee"
+              'color': '#eeeeee'
             }
           ]
         },
         {
-          "featureType": "water",
-          "elementType": "geometry",
-          "stylers": [
+          'featureType': 'water',
+          'elementType': 'geometry',
+          'stylers': [
             {
-              "color": "#3667aa"
+              'color': '#3667aa'
             }
           ]
         },
         {
-          "featureType": "water",
-          "elementType": "labels.text.fill",
-          "stylers": [
+          'featureType': 'water',
+          'elementType': 'labels.text.fill',
+          'stylers': [
             {
-              "color": "#b5b5b5"
+              'color': '#b5b5b5'
             }
           ]
         }
