@@ -71,15 +71,26 @@
     }
 
     &__contact-form {
-        padding: 0 4rem 1.5rem;
+        padding: 1.5rem 4rem;
 
         &-h3 {
             letter-spacing: .2rem;
             margin-bottom: 1rem;
+
+            &.-success {
+                letter-spacing: .3rem;
+                text-align: center;
+                margin-bottom: 2rem;
+            }
         }
 
         &-p {
             text-align: justify;
+
+            &.-success {
+                letter-spacing: .1rem;
+                text-align: center;
+            }
         }
     }
 
@@ -98,6 +109,11 @@
     &__disclaimer {
         font-size: .7rem;
         text-align: justify;
+    }
+
+    &__submit-success {
+        display: none;
+        padding: 1.5rem 4rem;
     }
 }
 

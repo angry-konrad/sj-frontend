@@ -92,11 +92,6 @@
         <div class="modal-form modal fade" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="modalFormLabel" aria-hidden="true">
           <div class="modal-dialog container-fluid">
             <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
               <div class="modal-body">
                 <div class="row">
                   <div class="modal-form__preview hidden-sm-down col-md-7">
@@ -116,55 +111,63 @@
                       </div>
                     </div>
                   </div>
-                  <div class="modal-form__contact-form col-sm-12 col-md-5">
-                    <h3 class="modal-form__contact-form-h3">Lorem ipsum?</h3>
-                    <p class="modal-form__contact-form-p">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-                    <form id="needs-validation" novalidate>
-                      <div class="input-wrapper">
-                        <input type="tel" class="form-control" id="validation" placeholder="Telefon..." value="" required>
-                        <div class="invalid-feedback">Please provide a valid telephone number.</div>
-                      </div>
-                      <div class="row">
-                        <div class="col-4">
-                          <label class="switch">
-                            <input id="switch1" type="checkbox">
-                            <span class="slider round"></span>
-                          </label>
+                  <div class="col-sm-12 col-md-5">
+                    <div class="modal-form__contact-form">
+                      <form id="needs-validation" novalidate>
+                        <h3 class="modal-form__contact-form-h3">Lorem ipsum?</h3>
+                        <p class="modal-form__contact-form-p">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <div class="input-wrapper">
+                          <input type="tel" class="form-control" id="validation" placeholder="Telefon..." value="" required>
+                          <div class="invalid-feedback">Please provide a valid telephone number.</div>
                         </div>
-                        <div class="col-8">
-                          <label class="switch-label" for="switch1">Lorem ipsum.</label>
+                        <div class="row">
+                          <div class="col-4">
+                            <label class="switch">
+                              <input id="switch1" type="checkbox">
+                              <span class="slider round"></span>
+                            </label>
+                          </div>
+                          <div class="col-8">
+                            <label class="switch-label" for="switch1">Lorem ipsum.</label>
+                          </div>
                         </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-4">
-                          <label class="switch">
-                            <input id="switch2" type="checkbox">
-                            <span class="slider round"></span>
-                          </label>
+                        <div class="row">
+                          <div class="col-4">
+                            <label class="switch">
+                              <input id="switch2" type="checkbox">
+                              <span class="slider round"></span>
+                            </label>
+                          </div>
+                          <div class="col-8">
+                            <label class="switch-label" for="switch2">Dolor sit amet.</label>
+                          </div>
                         </div>
-                        <div class="col-8">
-                          <label class="switch-label" for="switch2">Dolor sit amet.</label>
+                        <div class="row">
+                          <div class="col-4">
+                            <label class="switch">
+                              <input id="switch3" type="checkbox">
+                              <span class="slider round"></span>
+                            </label>
+                          </div>
+                          <div class="col-8">
+                            <label class="switch-label" for="switch3">Consectetur adipiscing elit.</label>
+                          </div>
                         </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-4">
-                          <label class="switch">
-                            <input id="switch3" type="checkbox">
-                            <span class="slider round"></span>
-                          </label>
-                        </div>
-                        <div class="col-8">
-                          <label class="switch-label" for="switch3">Consectetur adipiscing elit.</label>
-                        </div>
-                      </div>
-                      <button class="modal-form__submit-btn btn btn-primary" type="submit">Send</button>
-                      <h6 class="modal-form__disclaimer">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                      </h6>
-                    </form>
+                        <button class="modal-form__submit-btn btn btn-primary" type="submit">Send</button>
+                        <h6 class="modal-form__disclaimer">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </h6>
+                      </form>
+                    </div>
+                    <div class="modal-form__submit-success">
+                      <h3 class="modal-form__contact-form-h3 -success">Success!</h3>
+                      <p class="modal-form__contact-form-p -success">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </p>
+                    </div>    
                   </div>
                 </div>
               </div>
