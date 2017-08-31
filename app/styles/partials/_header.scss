@@ -1,0 +1,233 @@
+.header {
+    background: url('/images/apartament_photo.jpg') no-repeat center;
+    background-size: cover;
+
+    .owl-theme .owl-nav [class*='owl-'] {
+        background: none;
+        color: rgba($secondary-color, .8);
+        position: absolute;
+        font-size: 3rem;
+    }
+
+    .owl-prev {
+        left: 1%;
+        top: 115px;
+    }
+
+    .owl-next {
+        right: 1%;
+        top: 115px;
+    }
+
+    &__row {
+        height: 100%;
+
+        &.-mobile {
+            display: none;
+        }
+    }
+
+    &__logo {
+        margin-bottom: 3rem;
+    }
+
+    &__logo-image {
+        height: 100px;
+    }
+
+    &__info {
+        height: 100%;
+        background-color: rgba(255, 255, 255, .7);
+        padding: 3rem 4rem;
+    }
+
+    &__info-heading {
+        padding-bottom: 1.5rem;
+    }
+
+    &__info-description {
+        padding-bottom: 2rem;
+    }
+
+    &__info-more {
+        margin-top: 2rem;
+    }
+
+    &__info-contact-link {
+        margin: 1rem 0;
+        padding: 11px;
+        width: 45px;
+        height: 45px;
+        text-align: center;
+        font-weight: normal;
+
+        &.-facebook::before {
+            content: "\f09a";
+            font-family: FontAwesome;        
+        }
+        &.-twitter::before {
+            content: "\f099";
+            font-family: FontAwesome;
+        }
+        &.-mail::before {
+            content: "\f0e0";
+            font-family: FontAwesome;
+        }
+    }
+
+    &__background {
+        position: relative;
+    }
+
+    &__background-gallery-link {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-size: 1.2rem;
+        font-weight: normal;
+
+        &::before{
+            content: '\f083';
+            font-family: FontAwesome;
+            font-size: 1.4rem;
+            padding-right: .7rem;
+        }
+    }
+}
+
+.modal-gallery {
+    .modal-dialog {
+        max-width: none;
+        padding: 0;
+        margin: 2rem 3rem;
+
+        img {
+            height: 80vh;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden; 
+            -ms-transform: translateZ(0);
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+        }
+
+        .owl-theme .owl-nav [class*='owl-'] {
+            font-size: 6rem;
+        }
+
+        .owl-prev {
+            left: 1%;
+            top: 32vh;
+        }
+    
+        .owl-next {
+            right: 1%;
+            top: 32vh;
+        }
+    }
+
+    .modal-body {
+        padding: .4rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header{
+        &__info {
+            padding: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .modal-gallery {
+        .modal-dialog {   
+            img {
+                height: 50vh;
+            }
+
+            .owl-theme .owl-nav [class*='owl-'] {
+                font-size: 5rem;
+            }
+    
+            .owl-prev {
+                left: 1%;
+                top: 20vh;
+            }
+        
+            .owl-next {
+                right: 1%;
+                top: 20vh;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header{
+        background: none;
+
+        &__row {
+            &.-desktop {
+                display: none;
+            }
+    
+            &.-mobile {
+                display: block;
+            }
+        }
+
+        &__background-gallery-link {
+            z-index: 3;
+            font-size: .9rem;
+
+            &::before{
+                font-size: 1rem;
+            }
+        }
+
+        &__info-heading {
+            color: $main-color;
+            padding-top: 1.5rem;
+            padding-bottom: 1rem;
+            font-size: 1.7rem;
+        }
+    
+        &__info-description {
+            font-size: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        &__info-address {
+            font-size: .9rem;
+        }
+    }
+
+    .carousel-photos {
+        &__photo {
+            height: 300px;
+        }
+    }
+
+    .modal-gallery {
+        .modal-dialog {   
+            img {
+                height: 40vh;
+            }
+
+            .owl-theme .owl-nav [class*='owl-'] {
+                font-size: 3rem;
+            }
+
+            .owl-prev {
+                left: 1%;
+                top: 15vh;
+            }
+        
+            .owl-next {
+                right: 1%;
+                top: 15vh;
+            }
+    
+        }
+    }
+}

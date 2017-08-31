@@ -1,0 +1,80 @@
+.carousel-details {
+    padding: 3.5rem 0;
+
+    &__item {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    &__icon {
+        display: inline-block!important;
+        width: 50px!important;
+        height: 50px;
+        margin-bottom: 1.5rem;
+    }
+
+    &__heading {
+        color: $main-color;
+        font-weight: bold;
+    }
+
+    .owl-theme .owl-nav [class*='owl-'] {
+        background: none;
+        color: rgba($main-color, .6);
+        position: absolute;
+        font-size: 4rem;
+    }
+
+    .owl-prev {
+        left: 1%;
+        top: 44px;
+    }
+
+    .owl-next {
+        right: 1%;
+        top: 44px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .carousel-details {
+        padding: 2.5rem 0;
+        background-color: $main-color;
+
+        .owl-theme .owl-nav [class*='owl-'] {
+            color: rgba(255, 255, 255, .6);
+            font-size: 2.5rem;
+        }
+
+        .owl-prev {
+            left: .2%;
+        }
+    
+        .owl-next {
+            right: .2%;
+        }
+    
+        &__item {
+            text-align: center;
+            padding: 1rem;
+        }
+    
+        &__heading {
+            color: #fff;
+            font-size: 1.2rem;
+        }
+
+        &__subheading {
+            color: #fff;
+            font-size: .9rem;
+        }
+
+        .owl-prev {
+            top: 34px;
+        }
+    
+        .owl-next {
+            top: 34px;
+        }
+    }
+}

@@ -1,25 +1,26 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="no">
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>marketer fe template</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>marketer-fe-template</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.theme.default.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-    
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
   <body>
@@ -27,57 +28,279 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills float-right">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-        <h3 class="text-muted">marketer fe template</h3>
-      </div>
-
-      <div class="jumbotron">
-        <h1 class="display-3">'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-          <h4>Sass</h4>
-          <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
-
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-          <h4>Modernizr</h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
+    <div class="wrapper">
+      <header class="header container-fluid">
+        <div class="header__row -desktop row">
+          <div class="header__info col-sm-6">
+            <div class="header__logo">
+              <img class="header__logo-image" src="/images/header_logo.png" alt="company logo"/>
+            </div>
+            <h2 class="header__info-heading">Nedre Bobakkane</h2>
+            <h5 class="header__info-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </h5>
+            <h6 class="header__info-address">Nedre Bobakkane,<br /> 6812 Forde</h6>
+            <div>
+              <a class="header__info-more main-link-style" href="" data-toggle="modal" data-target="#modalForm">Eg ynskjer å vite meir</a>
+            </div>
+            <div>
+                <a class="header__info-contact-link -facebook main-link-style" href="#"></a>
+                <a class="header__info-contact-link -twitter main-link-style" href="#"></a>
+                <a class="header__info-contact-link -mail main-link-style" href="#"></a>
+            </div>
+          </div>
+          <div class="header__background col-sm-6">
+            <div>
+              <a class="header__background-gallery-link main-link-style" href="" data-toggle="modal" data-target="#galleryModal">Sjå alle billete</a>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div class="footer">
-        <p>♥ from the Yeoman team</p>
-      </div>
+        <div class="header__row -mobile row">
+          <div class="relative">
+            <div class="carousel-photos__owl owl-carousel owl-theme">
+              <div class="carousel-photos__item" data-toggle="modal" data-target="#galleryModal" data-hash="zero">
+                <img class="carousel-photos__photo owl-lazy" data-src="/images/apartament_photo.jpg"/>
+              </div>
+              <div class="carousel-photos__item" data-toggle="modal" data-target="#galleryModal" data-hash="one">
+                <img class="carousel-photos__photo owl-lazy" data-src="/images/house_photo2.jpg"/>
+              </div>    
+            </div>
+            <a class="header__background-gallery-link --mobile main-link-style" href="#one" data-toggle="modal" data-target="#galleryModal">Sjå alle billete</a>
+          </div>
+          <div class="header__info center-div">
+            <h2 class="header__info-heading">Nedre Bobakkane</h2>
+            <h5 class="header__info-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </h5>
+            <h6 class="header__info-address">Nedre Bobakkane,<br /> 6812 Forde</h6>
+            <div>
+              <a class="header__info-more main-link-style" href="" data-toggle="modal" data-target="#modalForm">Eg ynskjer å vite meir</a>
+            </div>
+            <div>
+              <a class="header__info-contact-link -facebook main-link-style" href="#"></a>
+              <a class="header__info-contact-link -twitter main-link-style" href="#"></a>
+              <a class="header__info-contact-link -mail main-link-style" href="#"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-form modal fade" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="modalFormLabel" aria-hidden="true">
+          <div class="modal-dialog container-fluid">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="row">
+                  <div class="modal-form__preview hidden-md-down col-lg-7">
+                    <img class="modal-form__image" src="/images/apartament_photo.jpg" alt="house view" />
+                    <div class="modal-form__preview-info row">
+                      <div class="col-md-4">
+                        <h5 class="modal-form__info-heading">Asking price</h5>
+                        <h6 class="modal-form__info-subheading">6 999 000,-</h6>
+                      </div>
+                      <div class="col-md-4">
+                        <h5 class="modal-form__info-heading">Floor area</h5>
+                        <h6 class="modal-form__info-subheading">186m<sup>2</sup></h6>
+                      </div>
+                      <div class="col-md-4">
+                        <h5 class="modal-form__info-heading">Address</h5>
+                        <h6 class="modal-form__info-subheading">Nedre Bobakkane,<br /> 6812 Forde</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 col-lg-5">
+                    <div class="modal-form__contact-form">
+                      <form id="needs-validation" novalidate>
+                        <h3 class="modal-form__contact-form-h3">Lorem ipsum?</h3>
+                        <p class="modal-form__contact-form-p">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <div class="input-wrapper">
+                          <input type="tel" class="form-control" id="validation" placeholder="Telefon..." value="" required>
+                          <div class="invalid-feedback">Please provide a valid telephone number.</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-3 col-sm-2 col-lg-4 col-xl-3">
+                            <label class="switch">
+                              <input id="switch1" type="checkbox">
+                              <span class="slider round"></span>
+                            </label>
+                          </div>
+                          <div class="col-9 col-sm-10 col-lg-8 col-xl-9">
+                            <label class="switch-label" for="switch1">Lorem ipsum.</label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-3 col-sm-2 col-lg-4 col-xl-3">
+                            <label class="switch">
+                              <input id="switch2" type="checkbox">
+                              <span class="slider round"></span>
+                            </label>
+                          </div>
+                          <div class="col-9 col-sm-10 col-lg-8 col-xl-9">
+                            <label class="switch-label" for="switch2">Dolor sit amet.</label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-3 col-sm-2 col-lg-4 col-xl-3">
+                            <label class="switch">
+                              <input id="switch3" type="checkbox">
+                              <span class="slider round"></span>
+                            </label>
+                          </div>
+                          <div class="col-9 col-sm-10 col-lg-8 col-xl-9">
+                            <label class="switch-label" for="switch3">Consectetur adipiscing elit.</label>
+                          </div>
+                        </div>
+                        <button class="modal-form__submit-btn btn btn-primary" type="submit">Send</button>
+                        <h6 class="modal-form__disclaimer">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </h6>
+                      </form>
+                    </div>
+                    <div class="modal-form__submit-success">
+                      <h3 class="modal-form__contact-form-h3 -success">Success!</h3>
+                      <p class="modal-form__contact-form-p -success">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </p>
+                    </div>    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-gallery modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="galleryModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                  <div class="carousel-photos__owl owl-carousel owl-theme">
+                      <div class="carousel-photos__item">
+                        <img class="carousel-photos__photo owl-lazy" data-src="/images/apartament_photo.jpg" data-hash="zero"/>
+                      </div>
+                      <div class="carousel-photos__item">
+                        <img class="carousel-photos__photo owl-lazy" data-src="/images/house_photo2.jpg" data-hash="one"/>
+                      </div>    
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      </header>
+
+      <section class="carousel-details">
+        <div class="carousel-details__owl owl-carousel owl-theme">
+          <div class="carousel-details__item">
+              <img class="carousel-details__icon" src="/images/piggybank.png"/>
+              <h3 class="carousel-details__heading">6 999 000,-</h3>
+              <h5 class="carousel-details__subheading">Asking price</h5>
+          </div>
+          <div class="carousel-details__item">
+              <img class="carousel-details__icon" src="/images/house_metrics.png"/>
+              <h3 class="carousel-details__heading">186m<sup>2</sup></h3>
+              <h5 class="carousel-details__subheading">Floor area</h5>
+          </div>
+          <div class="carousel-details__item">
+              <img class="carousel-details__icon" src="/images/costs.png"/>
+              <h3 class="carousel-details__heading">35,-</h3>
+              <h5 class="carousel-details__subheading">Overheads</h5>
+          </div>
+          <div class="carousel-details__item">
+              <img class="carousel-details__icon" src="/images/bedroom.png"/>
+              <h3 class="carousel-details__heading">3</h3>
+              <h5 class="carousel-details__subheading">Bedrooms</h5>
+          </div>
+          <div class="carousel-details__item">
+              <img class="carousel-details__icon" src="/images/costs.png"/>
+              <h3 class="carousel-details__heading">7th</h3>
+              <h5 class="carousel-details__subheading">Floor</h5>
+          </div>       
+        </div>
+      </section>
+
+      <section class="details-description">
+        <div class="details-description__title">
+          <h2 class="details-description__heading">Fullstendig <strong>bustadsinfo</strong></h2>
+        </div>
+        <div class="details-description__arrow-wrap"><div class="details-description__arrow-down"></div></div>
+        <div class="details-description__text-block">
+          <div class="details-description__transparent-overlay"></div>
+          <h4 class="details-description__text-heading">Hoydepunkter</h4>
+          <p class="details-description__text-paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              <br /> <br />
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
+              eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              <br /> <br />
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+              Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+              sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+              <br /> <br />
+              Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? 
+              Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+              vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+          </p>
+        </div>
+        <div class="center-div no-padding">
+          <a class="details-description__link-more main-link-style" href="javascript:void(0)">Vis meir</a>              
+        </div>
+      </section>
+
+      <section class="map-section">
+        <div class="map-section__map" id="map">
+        </div>
+      </section>
+
+      <section class="broker-contact container-fluid">
+        <div class="row">
+          <div class="col-6 align-right no-left-padding">
+            <img class="broker-contact__photo" src="/images/broker_photo.jpg" alt=""/>       
+          </div>
+          <div class="col-6 no-left-padding">
+            <div class="broker-contact__information">
+              <h3 class="broker-contact__name">Randi Vigdal</h3>
+              <h6 class="broker-contact__mail">randi@eigedomsmekling.no</h6>
+              <h6 class="broker-contact__phone">481 67 114</h6>
+              <h5 class="broker-contact__subtitle">Skal du selje?</h5>
+              <a class="broker-contact__contact-link main-link-style" href="#">Kontakt megler</a>
+            </div>  
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer container-fluid">
+        <div class="footer__first-row row">
+          <div class="col-sm-6 mobile-centered border-bottom">
+            <h5>Lorem ipsum dolor sit amet?</h5>
+            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="col-sm-6 align-right mobile-centered">
+            <a class="footer__link main-link-style" href="#">Meld pa</a>
+          </div>
+        </div>
+        <div class="footer__second-row row">
+          <div class="col-sm-6 mobile-centered">
+            <h6>Folg oss is sosiale media</h6>
+            <div>
+              <a class="footer__contact-link -facebook main-link-style" href="#"></a>
+              <a class="footer__contact-link -twitter main-link-style" href="#"></a>
+              <a class="footer__contact-link -mail main-link-style" href="#"></a>
+            </div>
+          </div>
+          <div class="col-sm-6 align-right mobile-centered">
+            <img class="footer__logo-image" src="/images/footer_logo.png" alt="company logo white"/>
+          </div>
+        </div>
+      </footer>
     </div>
     
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAd0VSSTcZijSLwvcus770tyz_CwWg7cIM&callback=initMap">
     </script>
 
     <!-- build:js scripts/vendor.js -->
@@ -85,6 +308,7 @@
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/popper.js/dist/umd/popper.js"></script>
     <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/owl.carousel/dist/owl.carousel.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     
@@ -103,6 +327,10 @@
     <!-- endbuild -->
     
     <!-- build:js scripts/main.js -->
+    <script src="scripts/map.js"></script>
+    <script src="scripts/form-validation.js"></script>
+    <script src="scripts/show-text-block.js"></script>
+    <script src="scripts/carousel-details.js"></script>
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
   </body>
